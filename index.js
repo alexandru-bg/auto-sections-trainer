@@ -4,11 +4,19 @@ const log = true;
 const logPeriod = 10;
 const iterations = 500;
 
-const inputSection = '100';
+const inputSection = 'Lower 100';
 
 console.log('Started');
 
-// const net = new brain.NeuralNetwork(); 
+/* 
+brain.NeuralNetwork
+brain.recurrent.RNN
+brain.recurrent.LSTM
+brain.recurrent.GRU
+brain.recurrent.RNNTimeStep
+brain.recurrent.LSTMTimeStep
+brain.recurrent.GRUTimeStep
+*/
 const net = new brain.recurrent.LSTM();
 
 // CSV First column is input (POS Section name) the rest are section names from criteria
